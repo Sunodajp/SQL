@@ -1,0 +1,11 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  nome TEXT,
+  email TEXT
+);
+
+INSERT INTO users VALUES (1, 'Suellyne', 'suellyne@teste.com');
+INSERT INTO users VALUES (2, 'Teste', NULL);
+INSERT INTO users VALUES (3, 'Fulano da Silva', 'beltrano@qa.com.br');
+INSERT INTO users VALUES (4, 'Alicia', 'alicia@teste.com');
+INSERT INTO users VALUES (5, NULL, 'teste@teste.com');
