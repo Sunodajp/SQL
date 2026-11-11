@@ -1,0 +1,12 @@
+CREATE TABLE orders (
+  id INTEGER PRIMARY KEY,
+  user_id INTEGER,
+  produto_id INTEGER,
+  quantidade INTEGER,
+  total REAL
+);
+
+INSERT INTO orders VALUES (1, 1, 1, 2, 720);
+INSERT INTO orders VALUES (2, 1, 2, 1, 100);
+INSERT INTO orders VALUES (3, 99, 1, 1, 360);
+INSERT INTO orders VALUES (4, 2, 1, 1, 360);
