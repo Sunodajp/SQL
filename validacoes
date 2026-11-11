@@ -1,0 +1,12 @@
+-- Achar pedido fantasma
+SELECT * FROM orders 
+WHERE user_id NOT IN (SELECT id FROM users);
+
+-- Achar produto sem preco
+SELECT * FROM products WHERE preco IS NULL;
+
+-- Juntas duas tabelas
+SELECT orders.id, users.nome, products.nome, orders.total
+FROM orders
+JOIN users ON orders.user_id = users.id
+JOIN products ON orders.produto_id = products.id;
