@@ -1,0 +1,9 @@
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY,
+  nome TEXT,
+  preco REAL
+);
+
+INSERT INTO products VALUES (1, 'Samsung s6', 360);
+INSERT INTO products VALUES (2, 'Nokia', 820);
+INSERT INTO products VALUES (3, 'Produto sem preco', NULL);
